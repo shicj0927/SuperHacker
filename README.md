@@ -70,6 +70,29 @@ Super Hacker 使用 GNU 许可协议开源。
   |0|比对未通过|
   |-1|比对器错误|
 
+  ```cpp
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	ifstream fin(".checker");
+	string f1,f2;
+	fin>>f1>>f2;
+	ifstream file1(f1.c_str());
+	ifstream file2(f2.c_str());
+	int a,b;
+	file1>>a;
+	file2>>b;
+	ofstream fout(".result");
+	if(a==b){
+		fout<<1<<endl;
+	}
+	else{
+		fout<<0<<endl;
+	}
+	return 0;
+}
+``
+
 # 输出解释
 
 1. 命令行：比对结果
