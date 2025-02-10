@@ -70,6 +70,8 @@ Super Hacker 使用 GNU 许可协议开源。
   |0|比对未通过|
   |-1|比对器错误|
 
+   例子：A+B Problem 的 checker.cpp
+
   ```cpp
 #include<bits/stdc++.h>
 using namespace std;
